@@ -1,4 +1,4 @@
-import './App.css'
+// Styles are imported in main.jsx
 
 function App() {
   return (

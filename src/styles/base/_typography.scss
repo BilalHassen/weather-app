@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-body;
+  line-height: $line-height-normal;
+  color: $text-primary;
+  background-color: $background;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-tight;
+  color: $text-primary;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+p {
+  line-height: $line-height-relaxed;
+}
+

@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: $radius-md;
+  font-weight: $font-weight-semibold;
+  transition: all $transition-fast $ease-out;
+  cursor: pointer;
+  border: none;
+  
+  &:focus {
+    outline: 2px solid $primary-blue;
+    outline-offset: 2px;
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  &--primary {
+    background-color: $primary-blue;
+    color: $surface;
+    
+    &:hover:not(:disabled) {
+      background-color: $primary-dark;
+      transform: scale(1.02);
+    }
+    
+    &:active:not(:disabled) {
+      opacity: 0.9;
+    }
+  }
+  
+  &--secondary {
+    background-color: transparent;
+    border: 2px solid $primary-blue;
+    color: $primary-blue;
+    
+    &:hover:not(:disabled) {
+      background-color: $primary-blue;
+      color: $surface;
+    }
+  }
+  
+  &--ghost {
+    background-color: transparent;
+    color: $text-primary;
+    
+    &:hover:not(:disabled) {
+      background-color: rgba($text-primary, 0.05);
+    }
+  }
+}
+
