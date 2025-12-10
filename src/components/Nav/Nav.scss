@@ -1,0 +1,33 @@
+@use "../../styles/abstracts/variables" as *;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo{
+    height: 30px;
+  }
+
+  &__dropDown {
+    background-color: $neutral-800;
+    border-radius: $radius-sm;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__units{
+    color: white;
+    font-size: 1.3rem;
+  }
+
+  &__dropDownIcon, &__gear{
+    width: 15px;
+    height: 15px;
+  }
+  &__gear{
+    cursor: pointer;
+  }
+}
