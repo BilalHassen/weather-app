@@ -2,11 +2,6 @@
 @use 'abstracts/variables';
 
 // Base
-@use 'base/reset';
+@use 'text';
 @use 'base/typography';
-
-// Components
-@use 'components/buttons';
-@use 'components/cards';
-@use 'components/inputs';
-
+@use "./global" as *;
