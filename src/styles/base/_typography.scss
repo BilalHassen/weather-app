@@ -1,15 +1,14 @@
 @use '../abstracts/variables' as *;
 
 body {
-  font-family: $font-family-primary;
-  font-size: $font-size-body;
-  line-height: $line-height-normal;
-  color: $text-primary;
-  background-color: $background;
+  font-family: "DM Sans", $font-family-primary;
   min-height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Sans", $font-family-primary;
   font-weight: $font-weight-semibold;
   line-height: $line-height-tight;
   color: $text-primary;
@@ -29,6 +28,10 @@ h3 {
 
 h4 {
   font-size: $font-size-h4;
+}
+
+p, span, a, button, input, textarea, select, label {
+  font-family: "DM Sans", $font-family-primary;
 }
 
 p {
